@@ -1,6 +1,7 @@
 package com.titlebar.haizitong.titlebar;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
@@ -165,6 +166,7 @@ public abstract class  BaseActivity extends Activity  implements TitleBuilder.Ti
                                     RelativeLayout.LayoutParams rl = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
                                     rl.addRule(RelativeLayout.BELOW, R.id.title_bar_id);
                                     scrollView.setLayoutParams(rl);
+                                    scrollView.setBackgroundColor(getResources().getColor(R.color.withe));
 //                              viewParent.addView(mTitleBuilder.mTitleView);
                                     scrollView.addView(mTitleBuilder.mRootView);
                                     viewParent.addView(scrollView);
